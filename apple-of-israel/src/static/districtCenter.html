@@ -1,0 +1,81 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Apple of Israel</title>
+<meta http-equiv="Content-Language" content="Hebrew" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<link rel="stylesheet" type="text/css" href="../stylesheets/main/style.css" media="screen" />
+<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="rss-articles/" />
+
+
+	<!-- ** CSS ** --> 
+    <!-- base library --> 
+    <link rel="stylesheet" type="text/css" href="../js/ext-3.3.1/resources/css/ext-all.css" /> 
+    
+    <!-- page specific --> 
+    <link rel="stylesheet" type="text/css" href="../js/ext-3.3.1/examples/shared/examples.css" /> 
+    <link rel="stylesheet" type="text/css" href="../js/ext-3.3.1/examples/grid/grid-examples.css" /> 
+
+	<!-- ExtJS library: base/adapter --> 
+	<script type="text/javascript" src="../js/ext-3.3.1/adapter/ext/ext-base.js"></script>
+	
+	<!-- ExtJS library: all widgets --> 
+	<script type="text/javascript" src="../js/ext-3.3.1/ext-all.js"></script>
+	
+	<script type="text/javascript">
+		localStorage.removeItem('currentDistrictViewed');
+		localStorage.setItem('currentDistrictViewed', 'Center');
+	</script>
+	
+	<script type="text/javascript" src="../js/json2.js"></script>
+	<script type="text/javascript" src="../js/date.js"></script>
+	<script type="text/javascript" src="../js/gridGenerator.js"></script>
+	
+	
+	<style type=text/css> 
+	    /* style rows on mouseover */
+	    .x-grid3-row-over .x-grid3-cell-inner {
+	        font-weight: bold;
+	    }
+	</style> 
+
+</head>
+<body>
+
+<div id="wrap">
+
+<div id="header">
+	<h1><a href="/index">Apple of Israel</a></h1>
+	<h2>A subsidiary of "Banana of Uruguay"</h2>
+</div>
+
+<div id="menu">
+	<ul>
+	<li><a href="/static/districtNorth.html">North District</a></li>
+	<li><a href="/static/districtCenter.html">Center District</a></li>
+	<li><a href="/static/districtSouth.html">South District</a></li>
+	<li><a href="/static/manageEmployees.html">Browse/Manage Employees</a></li>
+	
+	</ul>
+</div>
+
+<div id="content">
+
+	<div class="main">
+
+		<div id="grid-example"></div>
+
+	</div>
+
+</div>
+
+<div id="bottom"> </div>
+
+<div id="footer">
+<a href="http://www.templatesold.com/" target="_blank">Website Templates</a> by <a href="http://www.free-css-templates.com/" target="_blank">Free CSS Templates</a>
+</div>
+
+</div>
+</body>
+</html>
