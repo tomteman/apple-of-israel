@@ -1,0 +1,25 @@
+application: apple-of-israel
+version: 1
+runtime: python
+api_version: 1
+
+handlers:
+- url: /stylesheets
+  static_dir: stylesheets
+
+- url: /static
+  static_dir: static
+  
+- url: /js
+  static_dir: js
+  
+- url: /index
+  static_files: static/index.html
+  upload: static/(.*)
+
+- url: /employees
+  static_files: static/\employees.html
+  upload: static/(.*)
+
+- url: /.*
+  script: helloworld.py
