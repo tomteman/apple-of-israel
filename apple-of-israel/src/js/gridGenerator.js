@@ -53,35 +53,35 @@ Ext.onReady(function(){
             {
                 id       : 'lastName',
                 header   : 'Last Name', 
-                width    : 75, 
+                width    : 106, 
                 sortable : true, 
                 dataIndex: 'lastName'
             },
 	        {
                 id       : 'firstName',
                 header   : 'First Name', 
-                width    : 75, 
+                width    : 110, 
                 sortable : true, 
                 dataIndex: 'firstName'
             },
 			{
                 id       : 'area',
                 header   : 'Area', 
-                width    : 75, 
+                width    : 120, 
                 sortable : true, 
                 dataIndex: 'area'
             },
             {
                 id       : 'district',
                 header   : 'District', 
-                width    : 75, 
+                width    : 100, 
                 sortable : true, 
                 dataIndex: 'district'
             },
             {
             	id		 : 'startDate',
             	header	 : 'Start Date', 
-            	width	 : 75, 
+            	width	 : 100, 
             	sortable : true, 
             	dataIndex: 'startDate',
             	renderer : Ext.util.Format.dateRenderer('d-m-Y')
@@ -89,14 +89,14 @@ Ext.onReady(function(){
             {
                 id       : 'applesPicked',
                 header   : 'Apples Picked', 
-                width    : 75, 
+                width    : 100, 
                 sortable : true, 
                 dataIndex: 'applesPicked'
             },
 			{
             	id		 : 'average',
             	header	 : 'Average', 
-            	width	 : 75, 
+            	width	 : 100, 
             	sortable : true, 
             	dataIndex: 'average',
             	renderer : handleZeroAvg
